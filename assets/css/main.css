@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  list-style-type: none;
   text-decoration: none;
 }
 
@@ -96,15 +95,22 @@ main .first .content .about .text p {
 main .first .content .about .text p span {
   color: #c79c60;
 }
-main .first .content .about .text a {
-  background-image: url(../../images/tm-brown-button.png);
+main .first .content .about .text .detailbtn {
+  background-image: url("../../../assets/images/tm-brown-button.png");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 40px;
+  position: relative;
+  left: 200px;
   border-radius: 20px;
   border: solid 1px #c79c60;
   padding: 10px 50px;
+}
+main .first .content .about .text .detailbtn a {
   color: #c79c60;
   transition: 0.6s;
 }
-main .first .content .about .text a:hover {
+main .first .content .about .text .detailbtn a:hover {
   color: #fff;
 }
 main .first .content .about img {
@@ -143,13 +149,20 @@ main .cafe .house .left p .blue {
 main .cafe .house .left p .green {
   color: green;
 }
-main .cafe .house .left a {
-  color: #c79c60;
-  border: solid 1px #c79c60;
-  padding: 15px 50px;
+main .cafe .house .left .read {
+  background-image: url("../../../assets/images/tm-brown-button.png");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 40px;
   border-radius: 20px;
+  border: solid 1px #c79c60;
+  padding: 10px 50px;
 }
-main .cafe .house .left a:hover {
+main .cafe .house .left .read a {
+  color: #c79c60;
+  transition: 0.6s;
+}
+main .cafe .house .left .read a:hover {
   color: #fff;
 }
 main .cafe .house .right {
@@ -363,4 +376,149 @@ main .special .pictures .picture .rightp .bttm .lemon p {
   background: rgba(0, 0, 0, 0.6);
   font-size: 13px;
   padding: 7px 5px;
+}
+main .daily {
+  background-color: #e4e4e4;
+  position: relative;
+  top: 200px;
+}
+main .daily .main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .daily .main .top {
+  display: flex;
+}
+main .daily .main .top h2 {
+  display: flex;
+  align-items: end;
+  margin-left: 10px;
+  color: #c79c60;
+  font-family: "Pacifico", cursive;
+  font-weight: 500;
+}
+main .daily .main .top::after {
+  content: "";
+  display: inline-block;
+  width: 500px;
+  height: 1px;
+  margin: 28px 0 0 10px;
+  background-color: #c79c60;
+}
+main .daily .main .dailymenu {
+  margin-top: 30px;
+  display: flex;
+  gap: 30px;
+}
+main .daily .main .dailymenu .board {
+  width: 180px;
+  margin-top: 30px;
+}
+main .daily .main .dailymenu .board img {
+  width: 100%;
+}
+main .daily .main .dailymenu .col {
+  width: 600px;
+  padding: 30px 0;
+}
+main .daily .main .dailymenu .col p {
+  font-size: 15px;
+}
+main .daily .main .dailymenu .col nav {
+  margin: 30px 0 30px 20px;
+}
+main .daily .main .dailymenu .col nav ol li::marker {
+  color: orange;
+}
+main .daily .main .dailymenu .col nav ol li {
+  font-size: 14px;
+}
+main .daily .main .dailymenu .col .more {
+  background-image: url("../../../assets/images/tm-brown-button.png");
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 40px;
+  border-radius: 20px;
+  border: solid 1px #c79c60;
+  padding: 10px 50px;
+}
+main .daily .main .dailymenu .col .more a {
+  color: #c79c60;
+  transition: 0.6s;
+}
+main .daily .main .dailymenu .col .more a:hover {
+  color: #fff;
+}
+
+footer {
+  position: relative;
+  top: 200px;
+}
+footer .foot {
+  background-color: #302f2f;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+footer .foot .row {
+  width: 150px;
+}
+footer .foot .row ul li {
+  padding-bottom: 5px;
+}
+footer .foot .row ul li a {
+  color: #fff;
+}
+footer .foot .row ul li a:hover {
+  color: #c79c60;
+}
+footer .foot .row h3 {
+  font-size: 15px;
+  padding: 10px 0;
+}
+footer .foot .mid {
+  width: 400px;
+}
+footer .foot .mid h3 {
+  font-size: 15px;
+  padding: 10px 0;
+}
+footer .foot .mid p {
+  padding: 10px 0;
+  font-size: 15px;
+}
+footer .foot .nth {
+  width: 300px;
+  margin-left: 20px;
+}
+footer .foot .nth h3 {
+  font-size: 15px;
+}
+footer .foot .nth p {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+footer .foot .nth .icons i {
+  background-color: #505050;
+  color: white;
+  font-size: 20px;
+  margin: 10px;
+  padding: 8px;
+  transition: 0.6s;
+}
+footer .foot .nth .icons i:hover {
+  background-color: #c79c60;
+}
+footer .copyright {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+}
+footer .copyright p {
+  font-size: 15px;
+}
+footer .copyright p a {
+  color: blue;
 }
